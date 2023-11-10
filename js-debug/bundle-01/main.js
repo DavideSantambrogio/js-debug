@@ -17,7 +17,7 @@ for (let i = 0; i < 5; i++) { // < al posto di >
 
 // ESERCIZIO 2
 function addIfEven(num) {
-    if (num % 2 === 0) {      //if (num % 2 = 0) {
+    if (num % 2 == 0) {      //if (num % 2 = 0) {
         return num + 5;
     }
     return num;
@@ -38,15 +38,15 @@ function loopToFive() {
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 function displayEvenNumbers() {
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
-    for (let i = 0; i < numbers.length; i++) {  //tolto; dopo i++  e tolto -1 dopo member.lenght
+    for (let i = 0; i < numbers.length   ; i++) {  //tolto; dopo i++  e tolto -1 dopo member.lenght
         if (numbers[i] % 2 === 0); {   //=== AL POSTO DI =  aggiunto numers[i]
-            numbers.push(evenNumbers[i]); //push in evenNumbers[i]
+            evenNumbers.push(numbers[i]); //push in evenNumbers[i]
         }
-        return numbers;
+        
     } 
-       
+       return evenNumbers;
 }
 
 const result = displayEvenNumbers();
